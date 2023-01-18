@@ -4,24 +4,24 @@ ARG VARIANT="4.2"
 FROM ghcr.io/rocker-org/devcontainer/tidyverse:${VARIANT}
 
 RUN install2.r --error --skipinstalled -n -1 \
-        statip \
+        #statip \
         patchwork \
         paletteer \
         here \
-        doParallel \
+        #doParallel \
         janitor \
-        vip \
-        ranger \
-        palmerpenguins \
+        #vip \
+        #ranger \
+        #palmerpenguins \
         skimr \
-        nnet \
-        kernlab \
+        #nnet \
+        #kernlab \
         plotly \
-        factoextra \
-        cluster \
+        #factoextra \
+        #cluster \
         tidymodels \
         markdown \
-        ottr \
+        #ottr \
         unvotes \
         fivethirtyeight \
     && rm -rf /tmp/downloaded_packages \
